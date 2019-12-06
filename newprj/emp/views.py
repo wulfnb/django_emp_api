@@ -74,9 +74,7 @@ def eligible_for_hike(request,emp_id):
     emp_obj = Employees.objects.get(emp_no = emp_id)
     experiance = emp_obj.hire_date.today().year - emp_obj.hire_date.year
     age = emp_obj.birth_date.today().year - emp_obj.birth_date.year
-    # print(emp_obj.deptemp_set.all())
     emp_departments = emp_obj.deptemp_set.all()
-    # return JsonResponse({'1':'5'})
     if not ((age <= 20) or (experiance <= 1)):
         for emp_dept in emp_departments:
             if emp_dept.dept.dept_name in incl_depts:
