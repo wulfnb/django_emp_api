@@ -1,0 +1,20 @@
+// http://127.0.0.1:8000/emp/employee_hire/
+{
+    "birth_date": "1959-05-05",
+    "employee_id": "1995",
+    "first_name": "ABC",
+    "last_name": "EFG",
+    "gender": "M",
+    "hire_date": "2015-09-06",
+    "salary": {
+        "amount": 35000,
+        "from_date": "2016-09-06",
+        "to_date": "2017-01-10"
+    },
+    "department": "d009",
+    "title": {
+        "title": "Engineer",
+        "from_date": "2016-09-06",
+        "to_date": "2017-01-10"
+    }
+}
